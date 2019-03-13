@@ -1,4 +1,4 @@
-> **Disclaimer**: Please Note that I'm not responsible if your account get banned due to extensive use of this tool. Use it at yout own risk.
+> **Disclaimer**: Please Note that I'm not responsible if your account gets banned due to extensive use of this tool. Use it at your own risk.
 
 # InstaPyBot <img src="https://www.npo3fm.nl/images/2017/07/13_e8_chatbot-icon.png" width="100" align="middle">
 The ultimative Instagram bot written in python
