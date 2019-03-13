@@ -1,6 +1,6 @@
 > **Disclaimer**: Please Note that I'm not responsible if your account gets banned due to extensive use of this tool. Use it at your own risk.
 
-# InstaPyBot <img src="https://www.npo3fm.nl/images/2017/07/13_e8_chatbot-icon.png" width="100" align="middle">
+# InstaPyBot <img src="https://www.npo3fm.nl/images/2017/07/13_e8_chatbot-icon.png" width="180" align="right">
 The ultimative Instagram bot written in python
 [![MIT license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/Flerov/InstaPyBot/blob/master/LICENSE)
 [![built with Python3](https://img.shields.io/badge/built%20with-Python3-red.svg)](https://www.python.org/)
