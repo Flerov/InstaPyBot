@@ -6,7 +6,6 @@ from Scripts import colors as set
 import datetime
 import random
 import time
-import os
 
 
 t = 40  # timer
