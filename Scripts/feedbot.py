@@ -6,10 +6,7 @@ from Scripts import colors as set
 import datetime
 import random
 import time
-import os
 
-
-path = os.getcwd().strip('Scripts')
 
 t = 40  # timer
 
@@ -71,7 +68,6 @@ def autoprogressfeed(api: InstagramAPI, comments, blacklist, maxid=''):
                                                   i['like_count'],
                                                   i['comment_count']))
             if i['user']['username'] not in blacklist and str(i['caption']['media_id']) not in log_blacklist:
-                os.chdir(path)
                 with open('Configs/Logs/Feed-Bot-Log.txt', 'a') as log:
                     log.write(str(i['caption']['media_id']) + '\n')
                     api.like(i['caption']['media_id'])
