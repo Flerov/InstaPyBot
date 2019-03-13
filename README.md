@@ -1,11 +1,21 @@
+> **Disclaimer**: Please Note that I'm not responsible if your account get banned due to extensive use of this tool. Use it at yout own risk.
+
+<img src=https://www.npo3fm.nl/images/2017/07/13_e8_chatbot-icon.png" width="150" align="right">
+
 # InstaPyBot
 The ultimative Instagram bot written in python
+[![MIT license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/Flerov/InstaPyBot/blob/master/LICENSE)
+[![built with Python3](https://img.shields.io/badge/built%20with-Python3-red.svg)](https://www.python.org/)
+
 ---------------------------------------------------------------------------------------------
-#### Download Pictures/Videos ; Feed-Bot ; Unfollow-Bot ; Follow-by-Tag-Bot ; Geolocation-Bot
-requirements: Python 3.x ; InstagramAPI (pip3 install InstagramAPI)
+#### Tooling that lets you gain more influence on Instagram with ease
+Implemented in Python using InstagramAPI (by LevPasha)
+[![LevPasha on GitHub](https://github.com/LevPasha/Instagram-API-python)]
 
-
-start with: 'python3 main.py
+## **Installation**
+```elm
+pip install InstagramAPI
+```
 
 ---------
 What it can:
@@ -52,6 +62,7 @@ Feed:
 * this bot will automatically like and comment on posts in your feed 
 ---------------------------------------------------------------------------------------------------------------
 ![Alt text](https://github.com/Flerov/InstaPyBot/blob/readme-pictures/unnessessarry_pictures/2feedbot.png)
+
 ---------------------------------------------------------------------------------------------------------------
 
 Download Profile Pictures:
