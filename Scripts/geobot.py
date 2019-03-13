@@ -6,8 +6,6 @@ from Scripts import colors as set
 import datetime
 import random
 import time
-import os
-
 
 
 def unixtodate(unixid):
