@@ -13,6 +13,12 @@ Implemented in Python using InstagramAPI (by LevPasha)
 ## **Installation**
 ```elm
 pip install InstagramAPI
+git clone https://github.com/Flerov/InstaPyBot.git
+```
+## **Start script**
+```elm
+cd InstaPyBot/
+python3 main.py
 ```
 
 ---------
