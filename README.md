@@ -28,8 +28,9 @@ What it can:
 [ + ] Download of profile pictures 		              	 		                    
 [ + ] Download of posts              (pictures/videos)                       
 [ + ] Automatically follows people by a given tag       (+comment on posts)
-[ + ] Automatically follows people by their geolocation (+comment on posts)
-[ + ] Likes and comment automatically on feed posts    			           
+[ + ] Automatically follows people by their geolocation (+comment on posts)    
+[ + ] Automatically follows people suggested by Instagram
+[ + ] Likes and comment automatically on feed posts    			    
 [ + ] Comment on posts           (random from a editable list) 		         
 ```
 ---------
