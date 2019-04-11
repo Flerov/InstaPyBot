@@ -15,8 +15,9 @@ Implemented in Python using InstagramAPI (by LevPasha)
 git clone https://github.com/Flerov/InstaPyBot.git
 cd InstaPyBot
 pip install -r requirements.txt
+!Note: if the command doesn't work try it with pip3 instead of pip
 python3 setup.py
-!Note: if the command doesn't work try it with python or py instead of python3
+!Note: if the command doesn't work try it with python or py instead instead of python3
 ```
 ## **Start script**
 ```elm
