@@ -21,7 +21,7 @@ python3 setup.py
 ```
 ## **Start script**
 ```elm
-cd InstaPyBot/
+cd InstaPyBot
 python3 main.py
 ```
 
