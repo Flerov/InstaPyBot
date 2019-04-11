@@ -10,8 +10,10 @@ import time
 
 t = 40  # timer
 
+
 def unixtodate(unixid):
     return datetime.datetime.fromtimestamp(int(unixid)).strftime('%Y-%m-%d %H:%M:%S')
+
 
 def decode_rot_5(string):
     _maxid = ''
@@ -24,6 +26,7 @@ def decode_rot_5(string):
         except ValueError:
             pass
     return _maxid
+
 
 def autoprogressfeed(api: InstagramAPI, comments, blacklist, maxid=''):
     set.color(set.RED)
@@ -74,8 +77,8 @@ def autoprogressfeed(api: InstagramAPI, comments, blacklist, maxid=''):
                     comment = str(random.choice(comments))
                     api.comment(i['caption']['media_id'], comment)
                     set.color(set.GREEN)
-                    print("!Commented on post: [{}]".format(comment))
-                    print("!Liked post")
+                    print("Comment on post: [{}]".format(comment))
+                    print("Post liked")
                     print("------------------\n")
                     time.sleep(t)
         except KeyError:

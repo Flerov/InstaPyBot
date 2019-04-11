@@ -6,10 +6,15 @@ from Scripts import colors as set
 from time import sleep
 
 
-time = 30
+time = 40
 
 
 def followers_algorithm(api: InstagramAPI):  # suggested users to follow by instagrams algorithm
+    print(
+        "\n\033[0;31m-------------------------\n"
+        "Sleeping 40sec between every interaction! (ban-protection)\n"
+        "-------------------------\033[0;0m\n")
+
     api.getRecentActivity()
     data = api.LastJson
     users = {}

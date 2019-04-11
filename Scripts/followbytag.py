@@ -26,9 +26,16 @@ def init():
     set.color(set.GREEN)
     tag = str(input("[Tag]: "))
     set.color(set.BLUE)
-    print("How many people to follow ?")
+    print("How many posts to load ?")
     set.color(set.GREEN)
-    n = int(input("[Follow]: "))
+    n = int(input("[Posts]: "))
+    set.color(set.BLUE)
+    print("Follow people ?([Enter]=No / [input]=Yes)")
+    try:
+        set.color(set.GREEN)
+        follow = bool(input("[Follow]: "))
+    except ValueError:
+        follow = False
     set.color(set.BLUE)
     print("Comment on pictures ?([Enter]=No / [y/Y]=Yes)")
     try:
@@ -43,10 +50,10 @@ def init():
         minlikes = int(input("[Min]: "))
     except ValueError:
         minlikes = 0
-    return tag, n, comment, minlikes
+    return tag, n, follow, comment, minlikes
 
 
-def bot(api: InstagramAPI, comments, blacklist, tag, n, comment, minlikes):
+def bot(api: InstagramAPI, follow, comments, blacklist, tag, n, comment, minlikes):
     log_blacklist, log2_blacklist = [], []
     with open('Configs/Logs/Auto-Tag-Bot-Log.txt', 'r') as log, open('Configs/Logs/Feed-Bot-Log.txt', 'r') as log2:
         for i in log.readlines():
@@ -109,14 +116,16 @@ def bot(api: InstagramAPI, comments, blacklist, tag, n, comment, minlikes):
                 log.write(str(user['username'] + '\n'))
                 log2.write(str(items[i]['caption']['media_id']) + '\n')
                 api.like(items[i]['caption']['media_id'])
-                api.follow(items[i]['user']['pk'])
+                if follow:
+                    api.follow(items[i]['user']['pk'])
                 set.color(set.GREEN)
                 if comment:
                     cmt = str(random.choice(comments))
                     api.comment(items[i]['caption']['media_id'], cmt)
                     print("!Comment on post: [{}]".format(cmt))
-                print("!Post liked")
-                print("!User followed")
+                print("Post liked")
+                if follow:
+                    print("User followed")
                 time.sleep(t)
         except KeyError as e:
             set.color(set.RED)
@@ -132,4 +141,3 @@ def bot(api: InstagramAPI, comments, blacklist, tag, n, comment, minlikes):
             print("Skipping User!")
             time.sleep(1)
 
-            # follow fehlt + bug in schleife bei invalid data

@@ -9,6 +9,7 @@ import sys
 
 t = 5  # timer
 
+
 def getridoffakes(api: InstagramAPI, whitelist):
     try:
         set.color(set.RED)
@@ -22,7 +23,7 @@ def getridoffakes(api: InstagramAPI, whitelist):
         for i in follower:
             api.userFriendship(i['pk'])
             _ = api.LastJson
-            print("-------------------------\n[HD_PB]: ", i['profile_pic_url'])
+            print('-------------------------')
             if _['followed_by']:
                 print("[User]: {0} follows you\n"
                       "-------------------------\n".format(i['username']))

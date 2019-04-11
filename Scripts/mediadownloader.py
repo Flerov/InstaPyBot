@@ -12,6 +12,7 @@ import sys
 def unixtodate(unixid):
     return datetime.datetime.fromtimestamp(int(unixid)).strftime('%Y-%m-%d %H:%M:%S')
 
+
 def pbdownloader(api: InstagramAPI):
     set.color(set.BLUE)
     username = str(input("Username: "))
@@ -27,6 +28,7 @@ def pbdownloader(api: InstagramAPI):
         return True
     else:
         return False
+
 
 def postdownloader(api: InstagramAPI):
     set.color(set.BLUE)
