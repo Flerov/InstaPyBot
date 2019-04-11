@@ -12,8 +12,11 @@ Implemented in Python using InstagramAPI (by LevPasha)
 
 ## **Installation**
 ```elm
-pip install InstagramAPI
 git clone https://github.com/Flerov/InstaPyBot.git
+cd InstaPyBot
+pip install -r requirements.txt
+python3 setup.py
+!Note: if the command doesn't work try it with python or py instead of python3
 ```
 ## **Start script**
 ```elm
