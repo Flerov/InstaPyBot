@@ -7,7 +7,7 @@
 #
 
 from Scripts import mediadownloader, geobot, feedbot, followbytag, autounfollow, followersugests, colors as set
-import InstaAI.main
+#import InstaAI.main #  not in this version
 from InstagramAPI import InstagramAPI
 import threading
 import datetime
