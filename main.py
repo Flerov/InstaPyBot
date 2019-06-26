@@ -33,7 +33,7 @@ def options():
     print("(5) Download Profile-Picture (by username)")
     print("(6) Download Post (by username)")
     print("(7) InstAlgorithm-Bot (follow users suggested by Instagram's algorithms")
-    print("(8) InstaAI (auto download high quality posts, upload posts with comments etc.)")
+    #print("(8) InstaAI (auto download high quality posts, upload posts with comments etc.)")
 
     set.color(set.GREEN)
     print("\nChoose one option by its number!")
@@ -165,8 +165,8 @@ while True:
             mediadownloader.postdownloader(api, SESSION_DIR)
         elif choice == 7:
             followersugests.followers_algorithm(api)
-        elif choice == 8:
-            InstaAI.main.run(api)
+        #elif choice == 8:
+        #    InstaAI.main.run(api)
     except KeyboardInterrupt:
         set.color(set.RESET)
         print("\nExit script: [Enter]; Exit module: [input]")
