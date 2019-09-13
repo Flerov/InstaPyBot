@@ -7,6 +7,7 @@ The ultimative Instagram bot written in python
 
 ---------------------------------------------------------------------------------------------
 #### Tooling that lets you gain more influence on Instagram with ease
+#### It was never that easy to gain more influence on Instagram organically. The only thing you need is python
 Implemented in Python using InstagramAPI (by LevPasha)
 [![LevPasha on GitHub](https://github.com/LevPasha/Instagram-API-python)]
 
