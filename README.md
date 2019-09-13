@@ -14,8 +14,6 @@ Implemented in Python using InstagramAPI (by LevPasha)
 ```elm
 git clone https://github.com/Flerov/InstaPyBot.git
 cd InstaPyBot
-!You HAVE to install lev-pasha' InstagramAPI files manually into your site packages. Or into your project folder since the pip version is outdated and will not work with this Bot
-!Note: if the command doesn't work try it with pip3 instead of pip
 python3 setup.py
 !Note: if the command doesn't work try it with python or py instead instead of python3
 ```
@@ -23,18 +21,20 @@ python3 setup.py
 ```elm
 cd InstaPyBot
 python3 main.py
+!Note: you can directly give 'your_username' and 'your_password as the following arguments (python3 main.py 'your_username' 'your_password')
 ```
 
 ---------
 What it can:
 ---------
 ```
-[ + ] Download of profile pictures
-[ + ] Download of posts              (pictures/videos)
-[ + ] Automatically follows people by a given tag       (+comment on posts)
-[ + ] Automatically follows people by their geolocation (+comment on posts)
-[ + ] Likes and comment automatically on feed posts
-[ + ] Comment on posts           (random from a editable list)
+[ + ] Download profile pictures
+[ + ] Download posts              (pictures/videos)
+[ + ] Automatically follows people by a given tag       (+optionally: comment/like on posts)
+[ + ] Automatically follows people by their geolocation (+optionally: comment/like on posts)
+[ + ] Likes and/or comment automatically on feed posts
+[ + ] Added Session support so that multiple accounts can be handled with ease
+[ + ] Everything is adjustable (like, comment, follow, min. like, etc.)
 ```
 ---------
 ![Alt text](https://github.com/Flerov/InstaPyBot/blob/readme-pictures/unnessessarry_pictures/interface.jpg)
