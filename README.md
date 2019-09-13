@@ -14,7 +14,7 @@ Implemented in Python using InstagramAPI (by LevPasha)
 ```elm
 git clone https://github.com/Flerov/InstaPyBot.git
 cd InstaPyBot
-pip install -r requirements.txt
+!You HAVE to install lev-pasha' InstagramAPI files manually into your site packages. Or into your project folder since the pip version is outdated and will not work with this Bot
 !Note: if the command doesn't work try it with pip3 instead of pip
 python3 setup.py
 !Note: if the command doesn't work try it with python or py instead instead of python3
