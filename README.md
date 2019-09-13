@@ -10,12 +10,21 @@ The ultimative Instagram bot written in python
 Implemented in Python using InstagramAPI (by LevPasha)
 [![LevPasha on GitHub](https://github.com/LevPasha/Instagram-API-python)]
 
+# !Note: if a command doesn't work try it with python or py instead instead of python3
+
+## **Install requirements**
+```elm
+git clone https://github.com/LevPasha/Instagram-API-python/
+cd Instagram-API-python
+python3 setup.py
+(!maybe you have to install ffmpeg (run in python-terminal 'import imageio and then imageio.plugins.ffmpeg.download()')
+```
+
 ## **Installation**
 ```elm
 git clone https://github.com/Flerov/InstaPyBot.git
 cd InstaPyBot
 python3 setup.py
-!Note: if the command doesn't work try it with python or py instead instead of python3
 ```
 ## **Start script**
 ```elm
